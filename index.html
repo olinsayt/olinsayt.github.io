@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Олин Сайт</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="index_style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="search.js"></script>
+		<script type="text/javascript" src="favorites.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+		<div id="desktop">
+			<div class="container">
+				<div class="header">
+					<div><h1><a href="index.html">Олин Сайт</a></h1></div>
+					<div class="headernavdiv">
+						<ul class="headernav">
+							<li><a href="index.html?p=Контакты">Контакты</a></li>
+							<li><a href="index.html?p=О сайте">О сайте</a></li>
+							<li><a href="index.html?c=Избранное">Избранное</a></li>
+							<li>
+								<input type="search" id="search" placeholder="Поиск..." onsubmit="search()">
+							</li>
+						</ul>
+					</div>
+				</div>
+					
+				<div class="maincontent">
+					<!-- Navigation -->
+					<div class="nav">
+						<!-- Кулинария -->
+						<h1>Кулинария</h1>
+						<br>
+						<h3><a href="index.html?c=Мясные блюда">Мясные блюда</a></h3>
+						<h3><a href="index.html?c=Рыбные блюда">Рыбные блюда</a></h3>
+						<h3><a href="index.html?c=Овощные блюда">Овощные блюда</a></h3>
+						<h3><a href="index.html?c=Молочные блюда">Молочные блюда</a></h3>
+						<h3><a href="index.html?c=Салаты">Салаты</a></h3>
+						<h3><a href="index.html?c=Десерты">Десерты</a></h3>
+						<h3><a href="index.html?c=Напитки">Напитки</a></h3>
+						<h3><a href="index.html?c=Выпечка">Выпечка</a></h3>
+						<h3><a href="index.html?c=Закуски">Закуски</a></h3>
+						<!-- Косметика -->
+						<br>
+						<h1>Косметика</h1>
+						<br>
+						<h3>Тут ничего нет :(</h3>
+					</div>
+
+					<!-- Content -->
+					<div class="content" id="content">
+						<div class="recipepage">
+							
+						</div>
+					</div>
+				</div>
+					
+				<!-- Footer -->
+				<div class="footer">
+					<h3>Олин Сайт, 2021</h3>
+				</div>
+			</div>
+		</div>
+
+		<div id="mobile" style="display: none;">
+			<div class="mheader">
+				<h1><a href="index.html">Олин Сайт</a></h1>
+			</div>
+
+			<div class="mheadernav">
+				<ul>
+					<li><a href="index.html?p=Контакты">Контакты</a></li>
+					<li><a href="index.html?p=О сайте">О сайте</a></li>
+					<li><a href="index.html?c=Избранное">Избранное</a></li>
+				</ul>
+			</div>
+			
+			<div class="mnav">
+				<h3>
+					<a href="index.html?c=Мясные блюда">Мясные блюда</a>
+					<a href="index.html?c=Рыбные блюда">Рыбные блюда</a>
+					<a href="index.html?c=Овощные блюда">Овощные блюда</a>
+					<a href="index.html?c=Молочные блюда">Молочные блюда</a>
+					<a href="index.html?c=Салаты">Салаты</a>
+					<a href="index.html?c=Десерты">Десерты</a>
+					<a href="index.html?c=Напитки">Напитки</a>
+					<a href="index.html?c=Выпечка">Выпечка</a>
+					<a href="index.html?c=Закуски">Закуски</a>
+				</h3>
+				
+				<form action="#" onsubmit="doSearch();return false">
+					<input type="text" id="msearch" placeholder="Поиск...">
+					<button type="submit">Go</button>
+				</form>
+			</div>
+			<div class="clear"></div>
+
+			<div class="mcontent" id="mcontent">
+
+			</div>
+		</div>
+	</body>
+</html>
